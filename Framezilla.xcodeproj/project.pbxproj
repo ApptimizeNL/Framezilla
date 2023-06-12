@@ -1,974 +1,642 @@
 // !$*UTF8*$!
 {
-   archiveVersion = "1";
-   objectVersion = "46";
-   objects = {
-      "Framezilla::Framezilla" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_59";
-         buildPhases = (
-            "OBJ_62",
-            "OBJ_87"
-         );
-         dependencies = (
-         );
-         name = "Framezilla";
-         productName = "Framezilla";
-         productReference = "Framezilla::Framezilla::Product";
-         productType = "com.apple.product-type.framework";
-      };
-      "Framezilla::Framezilla::Product" = {
-         isa = "PBXFileReference";
-         path = "Framezilla.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "Framezilla::FramezillaPackageTests::ProductTarget" = {
-         isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_95";
-         buildPhases = (
-         );
-         dependencies = (
-            "OBJ_98"
-         );
-         name = "FramezillaPackageTests";
-         productName = "FramezillaPackageTests";
-      };
-      "Framezilla::FramezillaTests" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_100";
-         buildPhases = (
-            "OBJ_103",
-            "OBJ_116"
-         );
-         dependencies = (
-            "OBJ_118"
-         );
-         name = "FramezillaTests";
-         productName = "FramezillaTests";
-         productReference = "Framezilla::FramezillaTests::Product";
-         productType = "com.apple.product-type.bundle.unit-test";
-      };
-      "Framezilla::FramezillaTests::Product" = {
-         isa = "PBXFileReference";
-         path = "FramezillaTests.xctest";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "Framezilla::SwiftPMPackageDescription" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_89";
-         buildPhases = (
-            "OBJ_92"
-         );
-         dependencies = (
-         );
-         name = "FramezillaPackageDescription";
-         productName = "FramezillaPackageDescription";
-         productType = "com.apple.product-type.framework";
-      };
-      "OBJ_1" = {
-         isa = "PBXProject";
-         attributes = {
-            LastSwiftMigration = "9999";
-            LastUpgradeCheck = "9999";
-         };
-         buildConfigurationList = "OBJ_2";
-         compatibilityVersion = "Xcode 3.2";
-         developmentRegion = "en";
-         hasScannedForEncodings = "0";
-         knownRegions = (
-            "en"
-         );
-         mainGroup = "OBJ_5";
-         productRefGroup = "OBJ_47";
-         projectDirPath = ".";
-         targets = (
-            "Framezilla::Framezilla",
-            "Framezilla::SwiftPMPackageDescription",
-            "Framezilla::FramezillaPackageTests::ProductTarget",
-            "Framezilla::FramezillaTests"
-         );
-      };
-      "OBJ_10" = {
-         isa = "PBXFileReference";
-         path = "Array+Stack.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_100" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_101",
-            "OBJ_102"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_101" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Framezilla.xcodeproj/FramezillaTests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.15";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "FramezillaTests";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_102" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Framezilla.xcodeproj/FramezillaTests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.15";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "FramezillaTests";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_103" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_104",
-            "OBJ_105",
-            "OBJ_106",
-            "OBJ_107",
-            "OBJ_108",
-            "OBJ_109",
-            "OBJ_110",
-            "OBJ_111",
-            "OBJ_112",
-            "OBJ_113",
-            "OBJ_114",
-            "OBJ_115"
-         );
-      };
-      "OBJ_104" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_35";
-      };
-      "OBJ_105" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_36";
-      };
-      "OBJ_106" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_37";
-      };
-      "OBJ_107" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_38";
-      };
-      "OBJ_108" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_39";
-      };
-      "OBJ_109" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_40";
-      };
-      "OBJ_11" = {
-         isa = "PBXFileReference";
-         path = "CALayer+Installer.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_110" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_41";
-      };
-      "OBJ_111" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_42";
-      };
-      "OBJ_112" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_43";
-      };
-      "OBJ_113" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_44";
-      };
-      "OBJ_114" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_45";
-      };
-      "OBJ_115" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_46";
-      };
-      "OBJ_116" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_117"
-         );
-      };
-      "OBJ_117" = {
-         isa = "PBXBuildFile";
-         fileRef = "Framezilla::Framezilla::Product";
-      };
-      "OBJ_118" = {
-         isa = "PBXTargetDependency";
-         target = "Framezilla::Framezilla";
-      };
-      "OBJ_12" = {
-         isa = "PBXFileReference";
-         path = "HasRelations.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_13" = {
-         isa = "PBXFileReference";
-         path = "Maker+Configurations.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_14" = {
-         isa = "PBXFileReference";
-         path = "Maker+Unavailable.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_15" = {
-         isa = "PBXFileReference";
-         path = "OptionSet+ForEeach.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_16" = {
-         isa = "PBXFileReference";
-         path = "UIView+Installer.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_17" = {
-         isa = "PBXFileReference";
-         path = "UIView+Keyboard.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_18" = {
-         isa = "PBXFileReference";
-         path = "Keyboard.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_19" = {
-         isa = "PBXFileReference";
-         path = "KeyboardRectCloneView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_2" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_3",
-            "OBJ_4"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_20" = {
-         isa = "PBXFileReference";
-         path = "Maker+Relations.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_21" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_22",
-            "OBJ_23",
-            "OBJ_24",
-            "OBJ_25",
-            "OBJ_26",
-            "OBJ_27"
-         );
-         name = "Maker";
-         path = "Maker";
-         sourceTree = "<group>";
-      };
-      "OBJ_22" = {
-         isa = "PBXFileReference";
-         path = "Maker+Edges.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_23" = {
-         isa = "PBXFileReference";
-         path = "Maker+Equal.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_24" = {
-         isa = "PBXFileReference";
-         path = "Maker+Position.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_25" = {
-         isa = "PBXFileReference";
-         path = "Maker+Size.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_26" = {
-         isa = "PBXFileReference";
-         path = "Maker.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_27" = {
-         isa = "PBXFileReference";
-         path = "ViewMaker.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_28" = {
-         isa = "PBXFileReference";
-         path = "MakerHelper.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_29" = {
-         isa = "PBXFileReference";
-         path = "Number.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_3" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "NO";
-            DEBUG_INFORMATION_FORMAT = "dwarf";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            ENABLE_NS_ASSERTIONS = "YES";
-            GCC_OPTIMIZATION_LEVEL = "0";
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE=1",
-               "DEBUG=1"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            ONLY_ACTIVE_ARCH = "YES";
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-DXcode"
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE",
-               "DEBUG"
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Debug";
-      };
-      "OBJ_30" = {
-         isa = "PBXFileReference";
-         path = "Parameters.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_31" = {
-         isa = "PBXFileReference";
-         path = "Relations.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_32" = {
-         isa = "PBXFileReference";
-         path = "SafeArea.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_33" = {
-         isa = "PBXFileReference";
-         path = "Weak.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_34" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_35",
-            "OBJ_36",
-            "OBJ_37",
-            "OBJ_38",
-            "OBJ_39",
-            "OBJ_40",
-            "OBJ_41",
-            "OBJ_42",
-            "OBJ_43",
-            "OBJ_44",
-            "OBJ_45",
-            "OBJ_46"
-         );
-         name = "Tests";
-         path = "Tests";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_35" = {
-         isa = "PBXFileReference";
-         path = "BaseTest.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_36" = {
-         isa = "PBXFileReference";
-         path = "ContainerTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_37" = {
-         isa = "PBXFileReference";
-         path = "ExtensionsTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_38" = {
-         isa = "PBXFileReference";
-         path = "KeyboardTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_39" = {
-         isa = "PBXFileReference";
-         path = "MakerBothSideRelationsTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_4" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "YES";
-            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            GCC_OPTIMIZATION_LEVEL = "s";
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE=1"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-DXcode"
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE"
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Release";
-      };
-      "OBJ_40" = {
-         isa = "PBXFileReference";
-         path = "MakerCenterTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_41" = {
-         isa = "PBXFileReference";
-         path = "MakerSafeAreaTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_42" = {
-         isa = "PBXFileReference";
-         path = "MakerStackTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_43" = {
-         isa = "PBXFileReference";
-         path = "MakerTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_44" = {
-         isa = "PBXFileReference";
-         path = "MakerWidthHeightTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_45" = {
-         isa = "PBXFileReference";
-         path = "ScrollViewTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_46" = {
-         isa = "PBXFileReference";
-         path = "StateTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_47" = {
-         isa = "PBXGroup";
-         children = (
-            "Framezilla::FramezillaTests::Product",
-            "Framezilla::Framezilla::Product"
-         );
-         name = "Products";
-         path = "";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "OBJ_5" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_6",
-            "OBJ_7",
-            "OBJ_34",
-            "OBJ_47",
-            "OBJ_50",
-            "OBJ_51",
-            "OBJ_52",
-            "OBJ_53",
-            "OBJ_54",
-            "OBJ_55",
-            "OBJ_56",
-            "OBJ_57"
-         );
-         path = "";
-         sourceTree = "<group>";
-      };
-      "OBJ_50" = {
-         isa = "PBXFileReference";
-         path = "Framezilla.lib";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_51" = {
-         isa = "PBXFileReference";
-         path = "Example";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_52" = {
-         isa = "PBXFileReference";
-         path = "img";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_53" = {
-         isa = "PBXFileReference";
-         path = "Framezilla.derivedData";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_54" = {
-         isa = "PBXFileReference";
-         path = "LICENSE";
-         sourceTree = "<group>";
-      };
-      "OBJ_55" = {
-         isa = "PBXFileReference";
-         path = "README.md";
-         sourceTree = "<group>";
-      };
-      "OBJ_56" = {
-         isa = "PBXFileReference";
-         path = "CONTRIBUTING.md";
-         sourceTree = "<group>";
-      };
-      "OBJ_57" = {
-         isa = "PBXFileReference";
-         path = "_config.yml";
-         sourceTree = "<group>";
-      };
-      "OBJ_59" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_60",
-            "OBJ_61"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_6" = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         path = "Package.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_60" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Framezilla.xcodeproj/Framezilla_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "10.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Framezilla";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "Framezilla";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_61" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Framezilla.xcodeproj/Framezilla_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "10.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Framezilla";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "Framezilla";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_62" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_63",
-            "OBJ_64",
-            "OBJ_65",
-            "OBJ_66",
-            "OBJ_67",
-            "OBJ_68",
-            "OBJ_69",
-            "OBJ_70",
-            "OBJ_71",
-            "OBJ_72",
-            "OBJ_73",
-            "OBJ_74",
-            "OBJ_75",
-            "OBJ_76",
-            "OBJ_77",
-            "OBJ_78",
-            "OBJ_79",
-            "OBJ_80",
-            "OBJ_81",
-            "OBJ_82",
-            "OBJ_83",
-            "OBJ_84",
-            "OBJ_85",
-            "OBJ_86"
-         );
-      };
-      "OBJ_63" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_8";
-      };
-      "OBJ_64" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_10";
-      };
-      "OBJ_65" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_11";
-      };
-      "OBJ_66" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_12";
-      };
-      "OBJ_67" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_13";
-      };
-      "OBJ_68" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_14";
-      };
-      "OBJ_69" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_15";
-      };
-      "OBJ_7" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_8",
-            "OBJ_9",
-            "OBJ_18",
-            "OBJ_19",
-            "OBJ_20",
-            "OBJ_21",
-            "OBJ_28",
-            "OBJ_29",
-            "OBJ_30",
-            "OBJ_31",
-            "OBJ_32",
-            "OBJ_33"
-         );
-         name = "Sources";
-         path = "Sources";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_70" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_16";
-      };
-      "OBJ_71" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_17";
-      };
-      "OBJ_72" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_18";
-      };
-      "OBJ_73" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_19";
-      };
-      "OBJ_74" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_20";
-      };
-      "OBJ_75" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_22";
-      };
-      "OBJ_76" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_23";
-      };
-      "OBJ_77" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_24";
-      };
-      "OBJ_78" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_25";
-      };
-      "OBJ_79" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_26";
-      };
-      "OBJ_8" = {
-         isa = "PBXFileReference";
-         path = "ElementType.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_80" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_27";
-      };
-      "OBJ_81" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_28";
-      };
-      "OBJ_82" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_29";
-      };
-      "OBJ_83" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_30";
-      };
-      "OBJ_84" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_31";
-      };
-      "OBJ_85" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_32";
-      };
-      "OBJ_86" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_33";
-      };
-      "OBJ_87" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
-      };
-      "OBJ_89" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_90",
-            "OBJ_91"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_9" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_10",
-            "OBJ_11",
-            "OBJ_12",
-            "OBJ_13",
-            "OBJ_14",
-            "OBJ_15",
-            "OBJ_16",
-            "OBJ_17"
-         );
-         name = "Extensions";
-         path = "Extensions";
-         sourceTree = "<group>";
-      };
-      "OBJ_90" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk",
-               "-package-description-version",
-               "5.3.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_91" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk",
-               "-package-description-version",
-               "5.3.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Release";
-      };
-      "OBJ_92" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_93"
-         );
-      };
-      "OBJ_93" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_6";
-      };
-      "OBJ_95" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_96",
-            "OBJ_97"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_96" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Debug";
-      };
-      "OBJ_97" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Release";
-      };
-      "OBJ_98" = {
-         isa = "PBXTargetDependency";
-         target = "Framezilla::FramezillaTests";
-      };
-   };
-   rootObject = "OBJ_1";
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"Framezilla::FramezillaPackageTests::ProductTarget" /* FramezillaPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_95 /* Build configuration list for PBXAggregateTarget "FramezillaPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_98 /* PBXTargetDependency */,
+			);
+			name = FramezillaPackageTests;
+			productName = FramezillaPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_104 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* BaseTest.swift */; };
+		OBJ_105 /* ContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ContainerTests.swift */; };
+		OBJ_106 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* ExtensionsTests.swift */; };
+		OBJ_107 /* KeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* KeyboardTests.swift */; };
+		OBJ_108 /* MakerBothSideRelationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* MakerBothSideRelationsTests.swift */; };
+		OBJ_109 /* MakerCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* MakerCenterTests.swift */; };
+		OBJ_110 /* MakerSafeAreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* MakerSafeAreaTests.swift */; };
+		OBJ_111 /* MakerStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* MakerStackTests.swift */; };
+		OBJ_112 /* MakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* MakerTests.swift */; };
+		OBJ_113 /* MakerWidthHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* MakerWidthHeightTests.swift */; };
+		OBJ_114 /* ScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* ScrollViewTests.swift */; };
+		OBJ_115 /* StateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* StateTests.swift */; };
+		OBJ_117 /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Framezilla::Framezilla::Product" /* Framezilla.framework */; };
+		OBJ_63 /* ElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* ElementType.swift */; };
+		OBJ_64 /* Array+Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Array+Stack.swift */; };
+		OBJ_65 /* CALayer+Installer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* CALayer+Installer.swift */; };
+		OBJ_66 /* HasRelations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* HasRelations.swift */; };
+		OBJ_67 /* Maker+Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Maker+Configurations.swift */; };
+		OBJ_68 /* Maker+Unavailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Maker+Unavailable.swift */; };
+		OBJ_69 /* OptionSet+ForEeach.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* OptionSet+ForEeach.swift */; };
+		OBJ_70 /* UIView+Installer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* UIView+Installer.swift */; };
+		OBJ_71 /* UIView+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* UIView+Keyboard.swift */; };
+		OBJ_72 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Keyboard.swift */; };
+		OBJ_73 /* KeyboardRectCloneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* KeyboardRectCloneView.swift */; };
+		OBJ_74 /* Maker+Relations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Maker+Relations.swift */; };
+		OBJ_75 /* Maker+Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Maker+Edges.swift */; };
+		OBJ_76 /* Maker+Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Maker+Equal.swift */; };
+		OBJ_77 /* Maker+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Maker+Position.swift */; };
+		OBJ_78 /* Maker+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Maker+Size.swift */; };
+		OBJ_79 /* Maker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Maker.swift */; };
+		OBJ_80 /* ViewMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* ViewMaker.swift */; };
+		OBJ_81 /* MakerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* MakerHelper.swift */; };
+		OBJ_82 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Number.swift */; };
+		OBJ_83 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Parameters.swift */; };
+		OBJ_84 /* Relations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Relations.swift */; };
+		OBJ_85 /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* SafeArea.swift */; };
+		OBJ_86 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Weak.swift */; };
+		OBJ_93 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63969A942A37539B002FE778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Framezilla::Framezilla";
+			remoteInfo = Framezilla;
+		};
+		63969A952A3753DA002FE778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Framezilla::FramezillaTests";
+			remoteInfo = FramezillaTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"Framezilla::Framezilla::Product" /* Framezilla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Framezilla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Framezilla::FramezillaTests::Product" /* FramezillaTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = FramezillaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* Array+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Stack.swift"; sourceTree = "<group>"; };
+		OBJ_11 /* CALayer+Installer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Installer.swift"; sourceTree = "<group>"; };
+		OBJ_12 /* HasRelations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasRelations.swift; sourceTree = "<group>"; };
+		OBJ_13 /* Maker+Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maker+Configurations.swift"; sourceTree = "<group>"; };
+		OBJ_14 /* Maker+Unavailable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maker+Unavailable.swift"; sourceTree = "<group>"; };
+		OBJ_15 /* OptionSet+ForEeach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OptionSet+ForEeach.swift"; sourceTree = "<group>"; };
+		OBJ_16 /* UIView+Installer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Installer.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* UIView+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Keyboard.swift"; sourceTree = "<group>"; };
+		OBJ_18 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		OBJ_19 /* KeyboardRectCloneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardRectCloneView.swift; sourceTree = "<group>"; };
+		OBJ_20 /* Maker+Relations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maker+Relations.swift"; sourceTree = "<group>"; };
+		OBJ_22 /* Maker+Edges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maker+Edges.swift"; sourceTree = "<group>"; };
+		OBJ_23 /* Maker+Equal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maker+Equal.swift"; sourceTree = "<group>"; };
+		OBJ_24 /* Maker+Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maker+Position.swift"; sourceTree = "<group>"; };
+		OBJ_25 /* Maker+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maker+Size.swift"; sourceTree = "<group>"; };
+		OBJ_26 /* Maker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maker.swift; sourceTree = "<group>"; };
+		OBJ_27 /* ViewMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMaker.swift; sourceTree = "<group>"; };
+		OBJ_28 /* MakerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerHelper.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Relations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relations.swift; sourceTree = "<group>"; };
+		OBJ_32 /* SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArea.swift; sourceTree = "<group>"; };
+		OBJ_33 /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
+		OBJ_35 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		OBJ_36 /* ContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerTests.swift; sourceTree = "<group>"; };
+		OBJ_37 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
+		OBJ_38 /* KeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTests.swift; sourceTree = "<group>"; };
+		OBJ_39 /* MakerBothSideRelationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerBothSideRelationsTests.swift; sourceTree = "<group>"; };
+		OBJ_40 /* MakerCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerCenterTests.swift; sourceTree = "<group>"; };
+		OBJ_41 /* MakerSafeAreaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerSafeAreaTests.swift; sourceTree = "<group>"; };
+		OBJ_42 /* MakerStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerStackTests.swift; sourceTree = "<group>"; };
+		OBJ_43 /* MakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerTests.swift; sourceTree = "<group>"; };
+		OBJ_44 /* MakerWidthHeightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerWidthHeightTests.swift; sourceTree = "<group>"; };
+		OBJ_45 /* ScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewTests.swift; sourceTree = "<group>"; };
+		OBJ_46 /* StateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTests.swift; sourceTree = "<group>"; };
+		OBJ_50 /* Framezilla.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = Framezilla.lib; sourceTree = SOURCE_ROOT; };
+		OBJ_51 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
+		OBJ_52 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = SOURCE_ROOT; };
+		OBJ_53 /* Framezilla.derivedData */ = {isa = PBXFileReference; lastKnownFileType = file; path = Framezilla.derivedData; sourceTree = SOURCE_ROOT; };
+		OBJ_54 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_55 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_56 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		OBJ_57 /* _config.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = _config.yml; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_8 /* ElementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_117 /* Framezilla.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_21 /* Maker */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_22 /* Maker+Edges.swift */,
+				OBJ_23 /* Maker+Equal.swift */,
+				OBJ_24 /* Maker+Position.swift */,
+				OBJ_25 /* Maker+Size.swift */,
+				OBJ_26 /* Maker.swift */,
+				OBJ_27 /* ViewMaker.swift */,
+			);
+			path = Maker;
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* BaseTest.swift */,
+				OBJ_36 /* ContainerTests.swift */,
+				OBJ_37 /* ExtensionsTests.swift */,
+				OBJ_38 /* KeyboardTests.swift */,
+				OBJ_39 /* MakerBothSideRelationsTests.swift */,
+				OBJ_40 /* MakerCenterTests.swift */,
+				OBJ_41 /* MakerSafeAreaTests.swift */,
+				OBJ_42 /* MakerStackTests.swift */,
+				OBJ_43 /* MakerTests.swift */,
+				OBJ_44 /* MakerWidthHeightTests.swift */,
+				OBJ_45 /* ScrollViewTests.swift */,
+				OBJ_46 /* StateTests.swift */,
+			);
+			path = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Framezilla::FramezillaTests::Product" /* FramezillaTests.xctest */,
+				"Framezilla::Framezilla::Product" /* Framezilla.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_34 /* Tests */,
+				OBJ_47 /* Products */,
+				OBJ_50 /* Framezilla.lib */,
+				OBJ_51 /* Example */,
+				OBJ_52 /* img */,
+				OBJ_53 /* Framezilla.derivedData */,
+				OBJ_54 /* LICENSE */,
+				OBJ_55 /* README.md */,
+				OBJ_56 /* CONTRIBUTING.md */,
+				OBJ_57 /* _config.yml */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* ElementType.swift */,
+				OBJ_9 /* Extensions */,
+				OBJ_18 /* Keyboard.swift */,
+				OBJ_19 /* KeyboardRectCloneView.swift */,
+				OBJ_20 /* Maker+Relations.swift */,
+				OBJ_21 /* Maker */,
+				OBJ_28 /* MakerHelper.swift */,
+				OBJ_29 /* Number.swift */,
+				OBJ_30 /* Parameters.swift */,
+				OBJ_31 /* Relations.swift */,
+				OBJ_32 /* SafeArea.swift */,
+				OBJ_33 /* Weak.swift */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* Array+Stack.swift */,
+				OBJ_11 /* CALayer+Installer.swift */,
+				OBJ_12 /* HasRelations.swift */,
+				OBJ_13 /* Maker+Configurations.swift */,
+				OBJ_14 /* Maker+Unavailable.swift */,
+				OBJ_15 /* OptionSet+ForEeach.swift */,
+				OBJ_16 /* UIView+Installer.swift */,
+				OBJ_17 /* UIView+Keyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Framezilla::Framezilla" /* Framezilla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_59 /* Build configuration list for PBXNativeTarget "Framezilla" */;
+			buildPhases = (
+				OBJ_62 /* Sources */,
+				OBJ_87 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Framezilla;
+			productName = Framezilla;
+			productReference = "Framezilla::Framezilla::Product" /* Framezilla.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Framezilla::FramezillaTests" /* FramezillaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_100 /* Build configuration list for PBXNativeTarget "FramezillaTests" */;
+			buildPhases = (
+				OBJ_103 /* Sources */,
+				OBJ_116 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_118 /* PBXTargetDependency */,
+			);
+			name = FramezillaTests;
+			productName = FramezillaTests;
+			productReference = "Framezilla::FramezillaTests::Product" /* FramezillaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Framezilla::SwiftPMPackageDescription" /* FramezillaPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_89 /* Build configuration list for PBXNativeTarget "FramezillaPackageDescription" */;
+			buildPhases = (
+				OBJ_92 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FramezillaPackageDescription;
+			productName = FramezillaPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Framezilla" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Framezilla::Framezilla" /* Framezilla */,
+				"Framezilla::SwiftPMPackageDescription" /* FramezillaPackageDescription */,
+				"Framezilla::FramezillaPackageTests::ProductTarget" /* FramezillaPackageTests */,
+				"Framezilla::FramezillaTests" /* FramezillaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_104 /* BaseTest.swift in Sources */,
+				OBJ_105 /* ContainerTests.swift in Sources */,
+				OBJ_106 /* ExtensionsTests.swift in Sources */,
+				OBJ_107 /* KeyboardTests.swift in Sources */,
+				OBJ_108 /* MakerBothSideRelationsTests.swift in Sources */,
+				OBJ_109 /* MakerCenterTests.swift in Sources */,
+				OBJ_110 /* MakerSafeAreaTests.swift in Sources */,
+				OBJ_111 /* MakerStackTests.swift in Sources */,
+				OBJ_112 /* MakerTests.swift in Sources */,
+				OBJ_113 /* MakerWidthHeightTests.swift in Sources */,
+				OBJ_114 /* ScrollViewTests.swift in Sources */,
+				OBJ_115 /* StateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_63 /* ElementType.swift in Sources */,
+				OBJ_64 /* Array+Stack.swift in Sources */,
+				OBJ_65 /* CALayer+Installer.swift in Sources */,
+				OBJ_66 /* HasRelations.swift in Sources */,
+				OBJ_67 /* Maker+Configurations.swift in Sources */,
+				OBJ_68 /* Maker+Unavailable.swift in Sources */,
+				OBJ_69 /* OptionSet+ForEeach.swift in Sources */,
+				OBJ_70 /* UIView+Installer.swift in Sources */,
+				OBJ_71 /* UIView+Keyboard.swift in Sources */,
+				OBJ_72 /* Keyboard.swift in Sources */,
+				OBJ_73 /* KeyboardRectCloneView.swift in Sources */,
+				OBJ_74 /* Maker+Relations.swift in Sources */,
+				OBJ_75 /* Maker+Edges.swift in Sources */,
+				OBJ_76 /* Maker+Equal.swift in Sources */,
+				OBJ_77 /* Maker+Position.swift in Sources */,
+				OBJ_78 /* Maker+Size.swift in Sources */,
+				OBJ_79 /* Maker.swift in Sources */,
+				OBJ_80 /* ViewMaker.swift in Sources */,
+				OBJ_81 /* MakerHelper.swift in Sources */,
+				OBJ_82 /* Number.swift in Sources */,
+				OBJ_83 /* Parameters.swift in Sources */,
+				OBJ_84 /* Relations.swift in Sources */,
+				OBJ_85 /* SafeArea.swift in Sources */,
+				OBJ_86 /* Weak.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_93 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Framezilla::Framezilla" /* Framezilla */;
+			targetProxy = 63969A942A37539B002FE778 /* PBXContainerItemProxy */;
+		};
+		OBJ_98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Framezilla::FramezillaTests" /* FramezillaTests */;
+			targetProxy = 63969A952A3753DA002FE778 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Framezilla.xcodeproj/FramezillaTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = FramezillaTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Framezilla.xcodeproj/FramezillaTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = FramezillaTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				USE_HEADERMAP = NO;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				USE_HEADERMAP = NO;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Framezilla.xcodeproj/Framezilla_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Framezilla;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Framezilla;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Framezilla.xcodeproj/Framezilla_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Framezilla;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Framezilla;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_100 /* Build configuration list for PBXNativeTarget "FramezillaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_101 /* Debug */,
+				OBJ_102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "Framezilla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_59 /* Build configuration list for PBXNativeTarget "Framezilla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_60 /* Debug */,
+				OBJ_61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_89 /* Build configuration list for PBXNativeTarget "FramezillaPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_90 /* Debug */,
+				OBJ_91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_95 /* Build configuration list for PBXAggregateTarget "FramezillaPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_96 /* Debug */,
+				OBJ_97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
 }
